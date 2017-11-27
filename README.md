@@ -20,8 +20,9 @@ Foram criados TableModels próprios para as tabelas de Produto, Pedido e Item do
 
 ## Pontos importantes do funcionamento da interface
 Inicialmente, para o funcionamento do sistema, devem ser incluídos produtos. Após incluí-los, será possível gerenciar as mesas e seus pedidos corretamente. Em seguida, na parte de gerenciamento de mesas é necessário incluir uma mesa e a partir dela incluir um novo pedido. Dentro da janela do pedido é possível gerenciar os produtos pedidos e suas quantidades. Não é possível ter mais de um pedido aberto para uma mesma mesa, como garantia de segurança e evitando erros de usabilidade no sistema. Enquanto o pedido não for fechado é possível adicionar itens a ele. Após o pedido fechado, é demonstrado um resumo do pedido e não é mais possível adicionar dados a ele.
-## Pontos que apresentaram maior dificuldade de implementação
-A reestruturação utilizando o protocolo próprio da serialização e desserialização foi complexa. Sendo utilizado o formato dos dados separados por ponto e vírgula. Assim como a desserialização é feita a leitura da linha e a separação dos dados entre os ponto e vírgulas criando os objetos. Foram criados generators que buscam criar a sequenciação dos IDs de cada objeto;
+
+## Pontos que apresentaram maior dificuldade de implementação e protocolo de persistência desenvolvido
+A reestruturação utilizando o protocolo próprio da serialização e desserialização foi complexa, necessitando separar as camadas de visualização e dados. Sendo utilizado o formato dos dados separados por ponto e vírgula. Assim como a desserialização é feita a leitura da linha e a separação dos dados entre os ponto e vírgulas criando os objetos. Foram criados generators que buscam criar a sequenciação dos IDs de cada objeto;
 
 ## Pontos onde podem ser realizadas melhorias futuras
 

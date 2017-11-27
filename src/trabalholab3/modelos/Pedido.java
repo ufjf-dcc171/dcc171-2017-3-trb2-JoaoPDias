@@ -1,6 +1,6 @@
 package trabalholab3.modelos;
 
-import Generator.GeneratorItemPedido;
+import trabalholab3.Generator.GeneratorItemPedido;
 import java.io.File;
 import java.io.IOException;
 import java.math.RoundingMode;

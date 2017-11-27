@@ -1,4 +1,4 @@
-package Generator;
+package trabalholab3.Generator;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

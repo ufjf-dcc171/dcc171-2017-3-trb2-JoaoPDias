@@ -1,6 +1,6 @@
 package trabalholab3.modelos;
-import Generator.GeneratorMesa;
-import Generator.GeneratorPedido;
+import trabalholab3.Generator.GeneratorMesa;
+import trabalholab3.Generator.GeneratorPedido;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalTime;

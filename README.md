@@ -1,4 +1,4 @@
-## 1º Trabalho - DCC171
+## 2º Trabalho - DCC171
 ##### Aluno: João Paulo Dias
 ##### Matrícula: 201576017
 ##### Curso: Sistemas de Informação
@@ -21,10 +21,8 @@ Foram criados TableModels próprios para as tabelas de Produto, Pedido e Item do
 ## Pontos importantes do funcionamento da interface
 Inicialmente, para o funcionamento do sistema, devem ser incluídos produtos. Após incluí-los, será possível gerenciar as mesas e seus pedidos corretamente. Em seguida, na parte de gerenciamento de mesas é necessário incluir uma mesa e a partir dela incluir um novo pedido. Dentro da janela do pedido é possível gerenciar os produtos pedidos e suas quantidades. Não é possível ter mais de um pedido aberto para uma mesma mesa, como garantia de segurança e evitando erros de usabilidade no sistema. Enquanto o pedido não for fechado é possível adicionar itens a ele. Após o pedido fechado, é demonstrado um resumo do pedido e não é mais possível adicionar dados a ele.
 ## Pontos que apresentaram maior dificuldade de implementação
-A implementação dos TableModels foi com um grau de dificuldade maior, exigiu mais tempo para poder conseguir operar corretamente a JTable, ainda mais para a edição de dados de um item, pois ao utilizar o combo , era necessário que no evento Value Changed da tabela de itens, o produto deveria ser demonstrado corretamente no Combobox, exigindo uma classe que herdasse do JCombobox e sobreescrevesse seu método de setar o item selecionado, utilizando o id do produto como referência.
+A reestruturação utilizando o protocolo próprio da serialização e desserialização foi complexa. Sendo utilizado o formato dos dados separados por ponto e vírgula. Assim como a desserialização é feita a leitura da linha e a separação dos dados entre os ponto e vírgulas criando os objetos. Foram criados generators que buscam criar a sequenciação dos IDs de cada objeto;
 
 ## Pontos onde podem ser realizadas melhorias futuras
-
-Devem ser feitas melhorias a cerca dos dados, utilizando um banco de dados para facilitar o uso e também permitir a criação de novas funcionalidades.
 
 A interface necessita de melhorias quanto a implementação de atalhos, a sinalização de pedidos fechados na tabela de pedidos e melhorias gerais que buscam adequar o sistema aos padrões usados em sistemas desktop. O foco ao novo dado inserido na tabela, permitindo ao usuário a visualização do resultado de sua operação.
